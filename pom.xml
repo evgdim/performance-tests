@@ -58,10 +58,9 @@
 				<groupId>io.gatling</groupId>
 				<artifactId>gatling-maven-plugin</artifactId>
 				<version>${gatling-plugin.version}</version>
-<!-- 				<configuration> -->
-<!--  					<simulationClass>${gatling.simulations.package}.${gatling.simulation.name}</simulationClass> -->
-<!-- 					<simulationsFolder>${gatling.simulations.package}</simulationsFolder> -->
-<!-- 				</configuration> -->
+				<configuration>
+					<simulationClass>${gatling.simulations.package}.${gatling.simulation.name}</simulationClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
