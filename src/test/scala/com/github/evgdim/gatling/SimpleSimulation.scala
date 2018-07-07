@@ -5,13 +5,13 @@ import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder.toActionBuilder
 import io.gatling.http.protocol.HttpProtocolBuilder.toHttpProtocol
 
-class Simulation1 extends Simulation {
+class SimpleSimulation extends Simulation {
     before {
-        println("***** Simulation1 start *****")
+        println("***** SimpleSimulation start *****")
     }
 
     after {
-        println("***** Simulation1 finished ******")
+        println("***** SimpleSimulation finished ******")
     }
 
     val theHttpProtocolBuilder = http
