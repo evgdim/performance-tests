@@ -24,6 +24,6 @@ class RampUsersSimulation extends Simulation {
         )
 
     setUp(
-        theScenarioBuilder.inject(rampUsers(20).over(5))
+        theScenarioBuilder.inject(rampUsers(20).over(5 seconds))
     ).protocols(theHttpProtocolBuilder)
 }
