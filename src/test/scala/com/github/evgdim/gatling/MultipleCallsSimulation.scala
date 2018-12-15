@@ -24,7 +24,7 @@ class MultipleCallsSimulation extends Simulation {
                 .get("/hello?time=100")
               .check(jsonPath("$.id").findAll.saveAs("id")) //the endpoint returns a response like {id: 46, name: "Evgeni"}
         ).pace(2 seconds)
-        .exec(http("secondReq").get("/next/${id}"))
+        .exec(http("secondReq").get("/next/${id(0)}"))
 
     setUp(
         theScenarioBuilder.inject(atOnceUsers(10))
